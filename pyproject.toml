@@ -1,0 +1,27 @@
+[project]
+name = "winkeysymb"
+version = "1.0.0"
+description = "A fast, minimal Windows special character picker summoned via global hotkey."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "WinKeySymb Contributors" }
+]
+keywords = ["windows", "unicode", "special-characters", "math", "greek", "symbols", "picker", "hotkey"]
+classifiers = [
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pyqt6>=6.6.0",
+    "pyinstaller>=6.0.0",
+]
+
+[project.scripts]
+winkeysymb = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
